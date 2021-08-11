@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+*{
+    --background-color-primary: #ffffff;
+    --background-color-secondary: #ec0b4e;
+    --stroke-tertiary: #b6083c;
+    --text-colors: #1b1b1b;
+
+}
+/*------the background-------*/      
+.humansofvit{
+    background-color: var(--background-color-secondary,#ec0b4e);
+	background-image: url(back.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+    
+	width: 100%
+;
+
+}
+
+/*-----the button------- */
+.btn-three {
+	color: #FFF;
+	transition: all 0.5s;
+	position: relative;
+    padding: 20px;
+	size: 3rem;
+}
+
+.btn-three:hover::before {
+	opacity: 0 ;
+	transform: scale(0.5,0.5);
+}
+
+.btn-three:hover::after {
+	opacity: 1;
+	transform: scale(1,1);
+}
+.humansofvit .btn-three .texthere{
+    font-family: 'Open Sans',sans-serif;
+}
+
+/*media queries*/
+
+@media (min-width: 438px) {
+	.humansofvit{
+		
+    padding: 100px; 
+	overflow-x: hidden;
+	}
+	.btn-three::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 250px;
+		height: 100%;
+		z-index: 1;
+		background-color: rgba(255,255,255,0.1);
+		transition: all 0.3s;
+	}
+	.btn-three::after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 250px;
+		height: 100%;
+		z-index: 1;
+		opacity: 0;
+		transition: all 0.3s;
+		border: 1px solid rgba(255,255,255,0.5);
+		transform: scale(1.2,1.2);
+	}
+	.humansofvit .bigflex{
+		display: flex;
+		flex-direction: row;
+	}
+	.humansofvit .maincontent{
+	
+		display: flex;
+		flex-direction: column;
+		padding: 25px;
+	}
+	.humansofvit .text{
+		color: #ffffff;
+		font-size: 3rem;
+		letter-spacing: 2px;
+		margin-bottom: 0px;
+		font-family: 'Playfair Display',serif;
+		font-weight: 500;
+	 
+	}
+	
+}
+@media (max-width: 439px) {
+	.humansofvit{
+		background-image: url(realphonebg.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+		width: 100%;
+	}
+	.butn{
+		margin: 120px;
+	}
+	.humansofvit .btn-three .texthere{
+		font-family: 'Open Sans',sans-serif;
+		font-size: 15px;
+		text-align: center;
+	}
+	
+	.btn-three:hover::before {
+		opacity: 0 ;
+		transform: scale(0.5,0.5);
+	}
+	
+	.btn-three:hover::after {
+		opacity: 1;
+		transform: scale(1,1);
+	}
+	.btn-three::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 160px;
+		height: 70%;
+		z-index: 1;
+		background-color: rgba(255,255,255,0.1);
+		transition: all 0.3s;
+	}
+	.btn-three::after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 160px;
+		height: 70%;
+		z-index: 1;
+		opacity: 0;
+		transition: all 0.3s;
+		border: 1px solid rgba(255,255,255,0.5);
+		transform: scale(1.2,1.2);
+	}
+	.humansofvit .text{
+		color: #ffffff;
+		font-size: 1.5rem;
+		margin-bottom: 0px;
+		font-family: 'Playfair Display',serif;
+		font-weight: 500;
+		text-align: center;
+		
+	}
+	
+	.video{
+		display: flex;
+		flex-direction: column;
+		width: 250px;
+		height: 155px;
+		margin: 5rem;
+		padding: 2px;
+
+	}
+	
+}
+@media (max-width: 320px) {
+	.humansofvit{
+		background-image: url(realphonebg.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+		
+	}
+
+	.humansofvit .btn-three .texthere{
+		font-family: 'Open Sans',sans-serif;
+		font-size: 15px;
+		text-align: center;
+	}
+	.butn{
+		margin: 70px;
+	}
+	.btn-three:hover::before {
+		opacity: 0 ;
+		transform: scale(0.5,0.5);
+	}
+	
+	.btn-three:hover::after {
+		opacity: 1;
+		transform: scale(1,1);
+	}
+	.btn-three::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 160px;
+		height: 70%;
+		z-index: 1;
+		background-color: rgba(255,255,255,0.1);
+		transition: all 0.3s;
+	}
+	.btn-three::after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 160px;
+		height: 70%;
+		z-index: 1;
+		opacity: 0;
+		transition: all 0.3s;
+		border: 1px solid rgba(255,255,255,0.5);
+		transform: scale(1.2,1.2);
+	}
+	.humansofvit .text{
+		color: #ffffff;
+		font-size: 1.5rem;
+		font-family: 'Playfair Display',serif;
+		font-weight: 500;
+		text-align: center;
+	
+		
+	}
+	
+	.video{
+		display: flex;
+		flex-direction: column;
+		width: 200px;
+		height: 130px;
+		margin: 4rem;
+		padding: 20px;
+
+	}
+}
